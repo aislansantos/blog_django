@@ -10,10 +10,10 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
-    published_date = models.DateTimeField(blank=True, null=True)
+    published_date = models.DateTimeField(blank=True, null=True)# campo tipo DateTimeField, aqui estou criando o campo da tabela
     
     def publish(self):
-        self.published_date = timezone.now()
+        self.published_date = timezone.now() # aqui estou inserindo valor campo criado acima ?
         self.save()
         
     def __str__(self):
