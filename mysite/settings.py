@@ -133,6 +133,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Nome da URL em que o usuário será redirecionado
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth
-LOGIN_REDIRECT_URL = 'post_list'
+LOGIN_REDIRECT_URL = 'general_post_list'
 LOGIN_URL = 'login'
 LOGOUT_REDIRECT_URL = 'post_list'
